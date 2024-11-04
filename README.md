@@ -3,40 +3,6 @@
 ## Project Description
 This project conducts a detailed predictive analysis of violent crimes in Baltimore using various machine learning models. The aim is to provide predictive insights to law enforcement for more effective crime prevention strategies. This repository contains the data, Python scripts, and Jupyter notebooks used to perform the analysis.
 
-
-## Key Insights
-
-### Crime Trends Over Time by Region
-![Crime Trends by Region](visualization/crime_by_district.png)
-
-*Different Regions show varying levels of crime incidents, suggesting a need for district-specific crime prevention strategies.*
-
-### Crime Incidence by Location: Inside vs Outside
-![Inside vs Outside Crime](visualization/inside_outside_crime_2.png)
-
-*Analysis shows a higher incidence of violent crimes occurring outside, which could influence deployment strategies of law enforcement resources.*
-
-### Crime Distribution by Race
-![Crime by Race](visualization/crime_by_race.png)
-
-*This visualization indicates the racial distribution of crime victims and highlights areas where community and police engagement could be targeted.*
-
-### Hourly Crime Trends
-![Hourly Crime Trends](visualization/hourly_crime_trends.png)
-
-*Crime rates peak at specific hours, which could help in optimizing patrol times.*
-
-### Scatter and Hexbin Plots of Crime Locations
-![Scatter Plot of Crime Locations](visualization/scatter_plot_crime.png)
-![Hexbin Plot of Crime Locations](visualization/hexbin_plot_crime.png)
-
-*These plots provide a granular look at where crimes are most concentrated, aiding in visualizing hotspots within the city.*
-
-### Pairplot of Geographic and Crime Data
-![Pairplot of Latitude, Longitude, and Crime](visualization/pairplot.png)
-
-*Exploring relationships between geographic coordinates and crime occurrences to uncover patterns.*
-
 ## Models Evaluated
 The following machine learning models were evaluated in this study to predict violent crime occurrences:
 - Xgboost
@@ -54,6 +20,47 @@ The dataset used in this project consists of over 100,000 crime records from Bal
 - **Data Preprocessing**: Data cleaning, feature selection, and data transformation to prepare the dataset for modeling.
 - **Model Training**: Each model was trained using the processed dataset. Hyperparameters were tuned for optimal results.
 - **Performance Evaluation**: Models were evaluated based on Accuracy, Precision, Recall, F1 Score, and ROC AUC Score.
+
+
+## Key Insights
+
+### Crime Trends Over Time by Region
+![Crime Trends by Region](visualization/crime_by_district.png)
+*Different regions show varying levels of crime incidents, suggesting a need for district-specific crime prevention strategies.*
+
+### Crime Incidence by Location: Inside vs Outside
+![Inside vs Outside Crime](visualization/inside_outside_crime_2.png)
+*Analysis shows a higher incidence of violent crimes occurring outside, which could influence deployment strategies of law enforcement resources.*
+
+### Crime Distribution by Race
+![Crime by Race](visualization/crime_by_race.png)
+*This visualization indicates the racial distribution of crime victims and highlights areas where community and police engagement could be targeted.*
+
+### Hourly Crime Trends
+![Hourly Crime Trends](visualization/hourly_crime_trends.png)
+*This graph illustrates the hourly distribution of crime rates in Baltimore. There is a sharp decline in crime incidents from midnight, reaching a nadir in the early morning hours around 5 AM, when most residents are indoors. Crime rates begin to increase steadily from 6 AM, peaking during the late evening hours around 10 PM. This peak aligns with higher pedestrian and vehicular traffic as residents return from work and engage in evening activities. The data suggests that increasing police patrols and visibility during these peak evening hours could potentially deter crime or improve response times to incidents.*
+
+### Scatter and Hexbin Plots of Crime Locations
+![Scatter Plot of Crime Locations](visualization/scatter_plot_crime.png)
+![Hexbin Plot of Crime Locations](visualization/hexbin_plot_crime.png)
+*These plots provide a granular look at where crimes are most concentrated, aiding in visualizing hotspots within the city.*
+
+#### Key Insights:
+- **Central Concentration**: Both plots show a significant concentration of crimes in the central region of the city, suggesting a hotspot which may benefit from increased police presence and community-based intervention programs.
+- **Northwestern Activity**: There is notable activity in the northwestern areas, which might be correlated with socio-economic factors, requiring further analysis and targeted preventive measures.
+- **Spatial Patterns**: The varying intensity across different regions underscores the need for localized crime prevention strategies that consider the unique characteristics of each area.
+
+### Pairplot of Geographic and Crime Data
+![Pairplot of Latitude, Longitude, and Crime](visualization/pairplot.png)
+*Exploring relationships between geographic coordinates and crime occurrences to uncover patterns.*
+
+#### Key Insights:
+- **Density Peaks**: The density plots show that certain latitudes and longitudes have higher frequencies of crime occurrences, suggesting that these are key areas where violent crimes are more prevalent.
+- **Spatial Correlation**: The scatter plots illustrate clear patterns where higher crime rates are concentrated in specific geographical areas. This observation supports the hypothesis that violent crimes are not randomly distributed but are instead influenced by location-specific factors.
+- **Crime and Location Interaction**: The hue differentiation in scatter plots helps to visually segregate the areas based on the crime severity, indicating potential 'hotspots' for focused policing or community intervention programs.
+
+These visual patterns not only aid in understanding the spatial distribution of crime but also help in identifying potential areas for deploying resources more effectively and designing targeted crime prevention strategies.
+
 
 ## Results
 The performance of the models is summarized as follows:
