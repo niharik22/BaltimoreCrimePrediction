@@ -3,6 +3,34 @@
 ## Project Description
 This project conducts a detailed predictive analysis of violent crimes in Baltimore using various machine learning models. The aim is to provide predictive insights to law enforcement for more effective crime prevention strategies. This repository contains the data, Python scripts, and Jupyter notebooks used to perform the analysis.
 
+
+## Key Insights
+
+### Crime Incidence by Location: Inside vs Outside
+![Inside vs Outside Crime](visualization/inside_outside_crime_2.png)
+*Analysis shows a higher incidence of violent crimes occurring outside, which could influence deployment strategies of law enforcement resources.*
+
+### Crime Distribution by Race
+![Crime by Race](visualization/crime_by_race.png)
+*This visualization indicates the racial distribution of crime victims and highlights areas where community and police engagement could be targeted.*
+
+### Crime Trends Over Time by Region
+![Crime Trends by Region](visualization/crime_by_district.png)
+*Different Regions show varying levels of crime incidents, suggesting a need for district-specific crime prevention strategies.*
+
+### Hourly Crime Trends
+![Hourly Crime Trends](visualization/hourly_crime_trends.png)
+*Crime rates peak at specific hours, which could help in optimizing patrol times.*
+
+### Scatter and Hexbin Plots of Crime Locations
+![Scatter Plot of Crime Locations](visualization/scatter_plot_crime.png)
+![Hexbin Plot of Crime Locations](visualization/hexbin_plot_crime.png)
+*These plots provide a granular look at where crimes are most concentrated, aiding in visualizing hotspots within the city.*
+
+### Pairplot of Geographic and Crime Data
+![Pairplot of Latitude, Longitude, and Crime](visualization/pairplot.png)
+*Exploring relationships between geographic coordinates and crime occurrences to uncover patterns.*
+
 ## Models Evaluated
 The following machine learning models were evaluated in this study to predict violent crime occurrences:
 - Xgboost
