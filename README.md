@@ -6,6 +6,11 @@ This project conducts a detailed predictive analysis of violent crimes in Baltim
 
 ## Key Insights
 
+### Crime Trends Over Time by Region
+![Crime Trends by Region](visualization/crime_by_district.png)
+
+*Different Regions show varying levels of crime incidents, suggesting a need for district-specific crime prevention strategies.*
+
 ### Crime Incidence by Location: Inside vs Outside
 ![Inside vs Outside Crime](visualization/inside_outside_crime_2.png)
 
@@ -15,11 +20,6 @@ This project conducts a detailed predictive analysis of violent crimes in Baltim
 ![Crime by Race](visualization/crime_by_race.png)
 
 *This visualization indicates the racial distribution of crime victims and highlights areas where community and police engagement could be targeted.*
-
-### Crime Trends Over Time by Region
-![Crime Trends by Region](visualization/crime_by_district.png)
-
-*Different Regions show varying levels of crime incidents, suggesting a need for district-specific crime prevention strategies.*
 
 ### Hourly Crime Trends
 ![Hourly Crime Trends](visualization/hourly_crime_trends.png)
